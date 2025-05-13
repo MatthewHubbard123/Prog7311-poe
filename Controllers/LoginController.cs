@@ -79,23 +79,23 @@ public IActionResult Login(LoginModel model)
             {
                 new Claim(ClaimTypes.Name, Users.Username),
                 new Claim(ClaimTypes.Role, role.ToString()),
-                new Claim(ClaimTypes.NameIdentifier, Users.Id.ToString()) // Add this line
+                new Claim(ClaimTypes.NameIdentifier, Users.Id.ToString()) 
             };
             
             var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var authProperties = new AuthenticationProperties
             {
-                IsPersistent = true // Keep session after browser closes
+                IsPersistent = true 
             };
             
             HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, 
                 new ClaimsPrincipal(claimsIdentity), 
                 authProperties);
             
-            // Redirect based on role
+           
             if (role == UserRole.Employee)
             {
-                return RedirectToAction("Index", "Home"); // Change to Home controller
+                return RedirectToAction("Index", "Home"); 
             }
             else
             {

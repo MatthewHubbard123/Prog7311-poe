@@ -33,7 +33,7 @@ namespace Prog7311_POE.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Get the current user's identity
+                
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 
                 var product = new ProductModel
@@ -60,10 +60,10 @@ namespace Prog7311_POE.Controllers
         
         public IActionResult Scope()
         {
-            // Check if user is an employee (admin) or farmer
+            
             if (User.IsInRole("Employee"))
             {
-                // Employees can see all products
+                
                 var allProducts = _context.Products.Include(p => p.FarmerName).ToList();
                 
                 if (allProducts.Count == 0)
@@ -75,10 +75,10 @@ namespace Prog7311_POE.Controllers
             }
             else 
             {
-                //finds the current user's ID
+                
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
         
-                // Check if UserId exists in your product model
+                
                 var products = _context.Products.Include(p => p.FarmerName).Where(p => p.UserId == userId).ToList();
         
                 if (products.Count == 0)
