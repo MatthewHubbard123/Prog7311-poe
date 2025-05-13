@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Styles {
+    <style>
+        body {
+            background-image: url('/Images/dan-meyers-0AgtPoAARtE-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+        }
+
+        .typing-bounce-heading {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        p.typing-bounce-heading {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+    </style>
+}
+
+<div class="text-center welcome-container">
+    <h1 class="typing-bounce-heading">Welcome to Agri Energy Connect</h1>
+    <p class="typing-bounce-heading">Your one-stop solution for all agricultural needs.</p>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const headings = document.querySelectorAll('.typing-bounce-heading');
+            
+            headings.forEach(heading => {
+                const text = heading.textContent;
+                heading.textContent = '';
+                
+                
+                const characters = text.split('');
+                
+                
+                characters.forEach(char => {
+                    const span = document.createElement('span');
+                    span.textContent = char === ' ' ? '\u00A0' : char; 
+                    heading.appendChild(span);
+                });
+            });
+            
+            
+            let delay = 0;
+            headings.forEach(heading => {
+                const spans = heading.querySelectorAll('span');
+                spans.forEach((span, index) => {
+                    setTimeout(() => {
+                        span.classList.add('visible');
+                    }, delay + index * 50); 
+                });
+                delay += spans.length * 50 + 300;
+            });
+        });
+    </script>
+}

@@ -1,0 +1,44 @@
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Agri Energy Connect Login";
+}
+
+@section Styles {
+    <style>
+        body {
+            background-image: url('/Images/dmytro-tolokonov-Jq3WI9IQgEs-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+        }
+    </style>
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<br />
+
+<form asp-controller="Login" asp-action="Login" method="post">
+        <div>
+            <label asp-for="Username"></label>
+            <input asp-for="Username" />
+            <span asp-validation-for="Username"></span>
+        </div>
+<br />
+        <div>
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" />
+            <span asp-validation-for="Password"></span>
+        </div>
+<br />
+        <button type="submit" class="btn btn-primary">Login</button>
+</form>
+<br />
+        <div>
+            <a asp-controller="Login" asp-action="Register">Register</a>
+        </div>
+

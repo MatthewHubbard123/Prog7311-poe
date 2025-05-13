@@ -1,0 +1,60 @@
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Add Product";
+
+
+
+    <h2>Add Product</h2>
+
+<form method="post" action="AddProduct" enctype="multipart/form-data">
+        <div>
+            <label for="ProductName">ProductName:</label>
+            <input type="text" id="ProductName" name="ProductName" required />
+        </div>
+<br />
+        <div>
+            <label for="Price">Product Price (R):</label>
+            <input type="number" id="Price" name="Price" required />
+        </div>
+<br />
+        <div>
+            <label for="Category">Category:</label>
+            <input type="text" id="Category" name="Category" required />
+        </div>
+<br />
+        <div>
+            <label for="ProductionDate">Production Date:</label>
+            <input type="date" id="ProductionDate" name="ProductionDate" required />
+        </div>
+<br />
+        <div>
+            <label for="Stock">Stock Available:</label>
+            <input type="number" id="Stock" name="Stock" required />
+        </div>
+<br />
+        <div>
+            <label for="Description">Product Description:</label>
+            <input type="text" id="Description" name="Description" required />
+        </div>
+<br />
+        <button type="submit" class="btn btn-primary">Add Product</button>
+
+</form>
+
+}
+
+
+@section Styles {
+    <style>
+        body {
+            background-image: url('/Images/adele-payman-2oYMwuFgnTg-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            width: 100%;
+        }
+    </style>
+}
+
