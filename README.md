@@ -1,6 +1,6 @@
 # Agri-Energy Connect
 
-Agri-Energy Connect is an ASP.NET MVC web application that bridges the gap between **farmers** and **employees** in the agri-energy industry. It enables efficient management of agricultural products by allowing 
+Agri-Energy Connect is an ASP.NET MVC web application that bridges the gap between *farmers* and *employees* in the agri-energy industry. It enables efficient management of agricultural products by allowing 
 different roles to perform dedicated tasks such as product addition, filtering, and account management.
 
 ## 🌾 Project Overview
@@ -47,5 +47,5 @@ Follow the steps below to run the project locally on your machine.
 1. **Clone the Repository**
 
    ```bash```
-   git clone https://github.com/your-org-name/agri-energy-connect.git
+   git clone https://github.com/MatthewHubbard123/Prog7311-poe.git
    cd Prog7311 Poe
