@@ -19,31 +19,38 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
 
+        h1{
+            font-size: 5rem;
+            margin-top: 20px;
+        }
+
         p.typing-bounce-heading {
-            font-size: 1.2rem;
+            font-size: 3rem;
             margin-top: 15px;
         }
     </style>
 }
-
-<div class="text-center welcome-container">
+<br />
+<div class="text-center welcome-container" >
     <h1 class="typing-bounce-heading">Welcome to Agri Energy Connect</h1>
     <p class="typing-bounce-heading">Your one-stop solution for all agricultural needs.</p>
+    <br />
+    <p class="typing-bounce-heading">To start please click register at the top right and then login.</p>
 </div>
 
 @section Scripts {
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             const headings = document.querySelectorAll('.typing-bounce-heading');
-            
+            // Add typing effect to each heading
             headings.forEach(heading => {
                 const text = heading.textContent;
                 heading.textContent = '';
                 
-                
+                // Create a span for each character
                 const characters = text.split('');
                 
-                
+                // Clear the heading text
                 characters.forEach(char => {
                     const span = document.createElement('span');
                     span.textContent = char === ' ' ? '\u00A0' : char; 
@@ -51,7 +58,7 @@
                 });
             });
             
-            
+            // Add bounce effect to each character
             let delay = 0;
             headings.forEach(heading => {
                 const spans = heading.querySelectorAll('span');
@@ -60,6 +67,7 @@
                         span.classList.add('visible');
                     }, delay + index * 50); 
                 });
+                // Increase delay for the next heading
                 delay += spans.length * 50 + 300;
             });
         });

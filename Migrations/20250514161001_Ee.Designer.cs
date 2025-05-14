@@ -11,8 +11,8 @@ using Prog7311_POE.Data;
 namespace Prog7311_POE.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250513161113_Cc")]
-    partial class Cc
+    [Migration("20250514161001_Ee")]
+    partial class Ee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,9 @@ namespace Prog7311_POE.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("FarmerId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("FarmerNameId")
                         .HasColumnType("INTEGER");

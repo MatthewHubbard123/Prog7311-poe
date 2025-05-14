@@ -18,6 +18,11 @@ namespace Prog7311_POE.Controllers
             return View();
         }
 
+        public IActionResult Farm()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();

@@ -4,6 +4,7 @@
 
 }
 
+<div class="Farmer-container">
     <h2>Add Farmer</h2>
 
     <form method="post" action="AddFarmer">
@@ -53,8 +54,10 @@
         </div>
 <br />
         <button type="submit" class="btn btn-primary">Add Farmer</button>
-    </form>
 
+</form>
+
+</div>
 
 @section Styles {
     <style>
@@ -64,8 +67,31 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            min-height: 148vh;
             width: 100%;
+        }
+
+        .Farmer-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 30px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+            x: 125%;
+            y: 5%;
+            transform: translate(+125%, +5%);
+            
+        }
+
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        form div {
+            margin-bottom: 8px; 
         }
     </style>
 }

@@ -21,6 +21,6 @@ namespace Prog7311.Poe.Models
         public string FarmAddress { get; set; } = string.Empty;
         public string FarmLocation { get; set; } = string.Empty;
         public string FarmSize { get; set; } = string.Empty;
-        public UserRole Role { get; set; } = UserRole.Farmer;
+        public UserRole Role { get; set; }
     }
 }

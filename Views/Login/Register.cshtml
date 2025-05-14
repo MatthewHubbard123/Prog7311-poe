@@ -2,10 +2,10 @@
 
 @{
     ViewData["Title"] = "Register";
+}
 
-<h2>@ViewData["Title"]</h2>
-
-<br />
+<div class="Register-container">
+    <h2>Register</h2>
 
 <form asp-controller="Login" asp-action="Register" method="post">
         <div>
@@ -61,14 +61,13 @@
             <input asp-for="FarmSize" />
             <span asp-validation-for="FarmSize"></span>
         </div>
-<br />
         <button type="submit" class="btn btn-primary">Register</button>
 </form>
 <br />
         <div>
             <a asp-controller="Login" asp-action="Index">Already have an account? Login</a>
         </div>
-}
+</div>
 
 @section Styles {
     <style>
@@ -78,13 +77,35 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            min-height:150vh;
             width: 100%;
+        }
+
+         .Register-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 30px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+            x: 125%;
+            y: 5%;
+            transform: translate(+125%, +5%);
+            
+        }
+
+        h2 {
+            font-size: 2.5rem;
         }
 
         a {
             color: #0d6efd;
             text-decoration: none;
+        }
+
+        form div {
+            margin-bottom: 8px; 
         }
     </style>
 }

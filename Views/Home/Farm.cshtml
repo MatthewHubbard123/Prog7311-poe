@@ -1,0 +1,114 @@
+@{
+    ViewData["Title"] = "Farm";
+}
+
+
+<div class="dashboard-container">
+    <h2 class="dashboard-heading">Welcome to Agri-Energy Connect</h2>
+    <div class="dashboard-content">
+        <p>                Welcome to the Farmer's Dashboard!</p>
+        <p>        Here you can manage your products, view orders, and more.</p>
+        <p>Use the navigation menu to access different sections of the application.</p>
+        <p>                   please Enjoy Your Stay!!!</p>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        body {
+            background-image: url('/Images/adele-payman-2oYMwuFgnTg-unsplash.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            min-height: 80vh;
+            width: 100%;
+        }
+
+        .dashboard-container{
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 8px;
+            padding: 30px;
+            width: 1350px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+            x: 2%;
+            y: 77%;
+            transform: translate(-2%, +77%);
+        }
+        
+        .word-container {
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+            cursor: default;
+        }
+
+        .word-container:hover {
+            transform: scale(1.2);
+            color: #357535;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        .dashboard-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+        
+        .dashboard-heading {
+            margin-bottom: 20px;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add typing effect to the heading
+            const heading = document.querySelector('.dashboard-heading');
+            if (heading) {
+                const headingText = heading.textContent;
+                heading.textContent = '';
+                
+                // Split the heading text into words
+                const headingWords = headingText.trim().split(/\s+/);
+                // Clear the heading text
+                headingWords.forEach((word, index) => {
+                    const span = document.createElement('span');
+                    span.className = 'word-container';
+                    span.textContent = word;
+                    heading.appendChild(span);
+                    
+                    // Add a space between words
+                    // but not after the last word
+                    if (index < headingWords.length - 1) {
+                        heading.appendChild(document.createTextNode(' '));
+                    }
+                });
+            }
+
+            // Add typing effect to the paragraphs
+            const paragraphs = document.querySelectorAll('.dashboard-content p');
+            paragraphs.forEach(paragraph => {
+                const text = paragraph.textContent;
+                paragraph.textContent = '';
+                
+                // Split the paragraph text into words
+                const words = text.trim().split(/\s+/);
+                // Clear the paragraph text
+                words.forEach((word, index) => {
+                    const span = document.createElement('span');
+                    span.className = 'word-container';
+                    span.textContent = word;
+                    paragraph.appendChild(span);
+                    
+                    // Add a space between words
+                    // but not after the last word
+                    if (index < words.length - 1) {
+                        paragraph.appendChild(document.createTextNode(' '));
+                    }
+                });
+            });
+        });
+    </script>
+}

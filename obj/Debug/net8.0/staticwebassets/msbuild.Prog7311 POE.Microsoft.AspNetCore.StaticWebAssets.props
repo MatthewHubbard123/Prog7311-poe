@@ -12,8 +12,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lsl0mj74l9</Fingerprint>
-      <Integrity>qx+WrCeYv3jK9LwqJtZ7ifd8Fcqfz9c2Pv4uDN2WWnU=</Integrity>
+      <Fingerprint>ygsomlo6sa</Fingerprint>
+      <Integrity>IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</OriginalItemSpec>
@@ -35,24 +35,6 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\360_F_280281281_4oRYaWxHGoRIKwxF9HnofBIJa0kgm0Cg.webp'))">
-      <SourceType>Package</SourceType>
-      <SourceId>Prog7311 POE</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/Prog7311 POE</BasePath>
-      <RelativePath>Images/360_F_280281281_4oRYaWxHGoRIKwxF9HnofBIJa0kgm0Cg.webp</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uwi05m6zfv</Fingerprint>
-      <Integrity>vrxSkb31N5huw5jZMKhYEQmiPuxGucr0WuarZB1dZMI=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\360_F_280281281_4oRYaWxHGoRIKwxF9HnofBIJa0kgm0Cg.webp'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\adele-payman-2oYMwuFgnTg-unsplash.jpg'))">
       <SourceType>Package</SourceType>
@@ -120,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>72ntdw6os3</Fingerprint>
-      <Integrity>/ybfOx1T78NW5OBhjmNnFGrldQS3fai7fFwC5pEoDpc=</Integrity>
+      <Fingerprint>c1rcnca3ox</Fingerprint>
+      <Integrity>4Jozc9Md6lgENB6Jl9tDhYejDPdtYgtYYcjYwel+vM8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>

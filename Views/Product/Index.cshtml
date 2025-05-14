@@ -2,8 +2,9 @@
 @{
     ViewBag.Title = "Add Product";
 
+}
 
-
+<div class="Product-container ">
     <h2>Add Product</h2>
 
 <form method="post" action="AddProduct" enctype="multipart/form-data">
@@ -41,8 +42,7 @@
 
 </form>
 
-}
-
+</div>
 
 @section Styles {
     <style>
@@ -52,8 +52,30 @@
             background-position: center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            min-height: 110vh;
             width: 100%;
+        }
+
+        .Product-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 30px;
+            width: 380px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+            x: 125%;
+            y: 7%;
+            transform: translate(+125%, +7%); 
+        }
+
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        form div {
+            margin-bottom: 8px; 
         }
     </style>
 }

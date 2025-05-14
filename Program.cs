@@ -13,9 +13,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options => {
+    .AddCookie(options =>
+    {
+        options.ExpireTimeSpan = TimeSpan.FromHours(24);
+        options.SlidingExpiration = true;
         options.LoginPath = "/Login/Index";
+        options.AccessDeniedPath = "/Login/AccessDenied";
     });
+
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("RequireEmployee", policy => policy.RequireRole("Employee"));
+    options.AddPolicy("RequireFarmer", policy => policy.RequireRole("Farmer"));
+    options.AddPolicy("RequireAnyRole", policy => policy.RequireRole("Employee", "Farmer"));
+});
 
 var cultureInfo = new CultureInfo("en-ZA");
 CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
