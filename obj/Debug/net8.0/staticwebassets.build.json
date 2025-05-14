@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rj9A1Oyg5MBmCXg06Ls8NWmtdog1ogzToQo568oQBN4=",
+  "Hash": "l8SfmJcJ1ec8hYUt2YiJiv1Iqq5oIbH34ROYptN/ltE=",
   "Source": "Prog7311 POE",
   "BasePath": "_content/Prog7311 POE",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ygsomlo6sa",
-      "Integrity": "IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY=",
+      "Fingerprint": "cfytvyv4qg",
+      "Integrity": "iIrv4FC4BpJEOgOEhH7X4O4Xp0faOZFMpHtm/NgbCAU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -1384,6 +1384,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/site.cfytvyv4qg.css",
+      "AssetFile": "C:\\Users\\user\\Prog7311 Poe\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iIrv4FC4BpJEOgOEhH7X4O4Xp0faOZFMpHtm/NgbCAU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 16:35:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cfytvyv4qg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iIrv4FC4BpJEOgOEhH7X4O4Xp0faOZFMpHtm/NgbCAU="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\user\\Prog7311 Poe\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1394,7 +1439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4545"
+          "Value": "4478"
         },
         {
           "Name": "Content-Type",
@@ -1402,11 +1447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY=\""
+          "Value": "\"iIrv4FC4BpJEOgOEhH7X4O4Xp0faOZFMpHtm/NgbCAU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:39:39 GMT"
+          "Value": "Wed, 14 May 2025 16:35:24 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1416,52 +1461,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ygsomlo6sa.css",
-      "AssetFile": "C:\\Users\\user\\Prog7311 Poe\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4545"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 14 May 2025 14:39:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ygsomlo6sa"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-IvCnkff/AydlBQnccDuVIq7KaPivCHshXpmmi+sksUY="
+          "Value": "sha256-iIrv4FC4BpJEOgOEhH7X4O4Xp0faOZFMpHtm/NgbCAU="
         }
       ]
     },
