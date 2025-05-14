@@ -97,9 +97,9 @@ public IActionResult Login(LoginModel model)
             {
                 return RedirectToAction("Index", "Home"); 
             }
-            else
-            {
-                return RedirectToAction("Index", "Home");
+            
+            Console.WriteLine("Unknown role, redirecting to login");
+            return RedirectToAction("Index", "Login");
             }
         }
         ModelState.AddModelError("", "Invalid username or password");
